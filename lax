@@ -1,0 +1,7 @@
+curl https://github.com/doktor83/SRBMiner-Multi/releases/download/3.0.7/SRBMiner-Multi-3-0-7-Linux.tar.gz -L -o SRBMiner-Multi-3-0-7-Linux.tar.gz
+tar -xzvf SRBMiner-Multi-3-0-7-Linux.tar.gz
+cd SRBMiner-Multi-3-0-7
+while true
+do
+./SRBMiner-MULTI --algorithm xhash --pool eu.rplant.xyz:7159 --wallet 0x58e1aafadea1498c272819516741ef94de5209ee.x --password webpassword=x --keepalive true
+done
