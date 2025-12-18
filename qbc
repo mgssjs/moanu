@@ -32,4 +32,4 @@ cat > appsettings.json <<EOF
 }
 EOF
 
-./qjetski-Client
+./qli-Client
