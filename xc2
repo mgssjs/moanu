@@ -1,4 +1,4 @@
-curl https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.89/coreminer-linux-x86_64.tar.gz -L -o coreminer-linux-x86_64.tar.gz
+curl https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz -L -o coreminer-linux-x86_64.tar.gz
 tar xf coreminer-linux-x86_64.tar.gz
 cd coreapp
 while true
