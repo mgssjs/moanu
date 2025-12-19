@@ -29,31 +29,31 @@ gcloud compute instances create instance-5 \
   --async
 
 gcloud compute instances create instance-1a \
-  --zone=us-central1-c --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
+  --zone=us-central1-a --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
   --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
   --image-project ubuntu-os-accelerator-images \
   --async
 
 gcloud compute instances create instance-2a \
-  --zone=us-central1-c --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
+  --zone=us-central1-a --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
   --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
   --image-project ubuntu-os-accelerator-images \
   --async
 
 gcloud compute instances create instance-3a \
-  --zone=us-central1-c --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
+  --zone=us-central1-a --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
   --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
   --image-project ubuntu-os-accelerator-images \
   --async
 
 gcloud compute instances create instance-4a \
-  --zone=us-central1-c --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
+  --zone=us-central1-a --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
   --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
   --image-project ubuntu-os-accelerator-images \
   --async
 
 gcloud compute instances create instance-5a \
-  --zone=us-central1-c --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
+  --zone=us-central1-a --machine-type=a3-highgpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-80gb \
   --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
   --image-project ubuntu-os-accelerator-images \
   --async
