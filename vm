@@ -1,0 +1,29 @@
+gcloud compute instances create instance-1 \
+  --zone=us-central1-c --machine-type=a3-megagpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-mega-80gb \
+  --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
+  --image-project ubuntu-os-accelerator-images \
+  --async
+
+gcloud compute instances create instance-2 \
+  --zone=us-central1-c --machine-type=a3-megagpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-mega-80gb \
+  --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
+  --image-project ubuntu-os-accelerator-images \
+  --async
+
+gcloud compute instances create instance-3 \
+  --zone=us-central1-c --machine-type=a3-megagpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-mega-80gb \
+  --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
+  --image-project ubuntu-os-accelerator-images \
+  --async
+
+gcloud compute instances create instance-4 \
+  --zone=us-central1-c --machine-type=a3-megagpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-mega-80gb \
+  --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
+  --image-project ubuntu-os-accelerator-images \
+  --async
+
+gcloud compute instances create instance-5 \
+  --zone=us-central1-c --machine-type=a3-megagpu-8g --provisioning-model=SPOT --accelerator=count=8,type=nvidia-h100-mega-80gb \
+  --image-family ubuntu-accelerator-2404-amd64-with-nvidia-580 \
+  --image-project ubuntu-os-accelerator-images \
+  --async
