@@ -4,7 +4,7 @@ gcloud compute instances create instance-1 \
   --image-project ubuntu-os-accelerator-images \
   --no-restart-on-failure \
   --maintenance-policy=TERMINATE \
-  --provisioning-model=FLEX_START \
+  --provisioning-model=SPOT \
   --instance-termination-action=DELETE \
   --max-run-duration=360000s \
   --async
@@ -15,7 +15,7 @@ gcloud compute instances create instance-2 \
   --image-project ubuntu-os-accelerator-images \
   --no-restart-on-failure \
   --maintenance-policy=TERMINATE \
-  --provisioning-model=FLEX_START \
+  --provisioning-model=SPOT \
   --instance-termination-action=DELETE \
   --max-run-duration=360000s \
   --async
@@ -26,7 +26,7 @@ gcloud compute instances create instance-3 \
   --image-project ubuntu-os-accelerator-images \
   --no-restart-on-failure \
   --maintenance-policy=TERMINATE \
-  --provisioning-model=FLEX_START \
+  --provisioning-model=SPOT \
   --instance-termination-action=DELETE \
   --max-run-duration=360000s \
   --async
@@ -37,7 +37,7 @@ gcloud compute instances create instance-4 \
   --image-project ubuntu-os-accelerator-images \
   --no-restart-on-failure \
   --maintenance-policy=TERMINATE \
-  --provisioning-model=FLEX_START \
+  --provisioning-model=SPOT \
   --instance-termination-action=DELETE \
   --max-run-duration=360000s \
   --async
@@ -48,7 +48,7 @@ gcloud compute instances create instance-5 \
   --image-project ubuntu-os-accelerator-images \
   --no-restart-on-failure \
   --maintenance-policy=TERMINATE \
-  --provisioning-model=FLEX_START \
+  --provisioning-model=SPOT \
   --instance-termination-action=DELETE \
   --max-run-duration=360000s \
   --async
