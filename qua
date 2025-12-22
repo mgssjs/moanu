@@ -1,12 +1,11 @@
 apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo
-wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb
-sudo su -c "apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo && wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb"
+wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && sudo dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb
 curl https://github.com/doktor83/SRBMiner-Multi/releases/download/3.0.9/SRBMiner-Multi-3-0-9-Linux.tar.gz -L -o SRBMiner-Multi-3-0-9-Linux.tar.gz
 tar -xzvf SRBMiner-Multi-3-0-9-Linux.tar.gz
 cd SRBMiner-Multi-3-0-9
-./SRBMiner-MULTI --algorithm xhash --pool eu.rplant.xyz:7159 --wallet 0x58e1aafadea1498c272819516741ef94de5209ee.x --password webpassword=x --keepalive true
+sudo ./SRBMiner-MULTI --algorithm xhash --pool eu.rplant.xyz:7159 --wallet 0x58e1aafadea1498c272819516741ef94de5209ee.x --password webpassword=x --keepalive true
 
 
-curl https://github.com/kryptex-miners-org/kryptex-miners/releases/download/trex-0-26-8/t-rex-0.26.8-linux.tar.gz -L -o t-rex-0.26.8-linux.tar.gz
-tar xf t-rex-0.26.8-linux.tar.gz
-./t-rex -a kawpow -o stratum+tcp://de.quai.gfwroute.com:1185 -u 0x000284da7cC36046Be6d59B3343a573a83A09b73.$(echo $RANDOM | md5sum | head -c 10) -p x
+#curl https://github.com/kryptex-miners-org/kryptex-miners/releases/download/trex-0-26-8/t-rex-0.26.8-linux.tar.gz -L -o t-rex-0.26.8-linux.tar.gz
+#tar xf t-rex-0.26.8-linux.tar.gz
+#./t-rex -a kawpow -o stratum+tcp://de.quai.gfwroute.com:1185 -u 0x000284da7cC36046Be6d59B3343a573a83A09b73.$(echo $RANDOM | md5sum | head -c 10) -p x
