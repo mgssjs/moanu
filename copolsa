@@ -1,4 +1,4 @@
-sudo su -c "apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo && wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb"
+apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo && wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb
 curl https://github.com/ParallaxProtocol/hashwarp/releases/download/v1.2.0/hashwarp-v1.2.0-cuda12-linux.tar.xz -L -o hashwarp-v1.2.0-cuda12-linux.tar.xz
 tar xf hashwarp-v1.2.0-cuda12-linux.tar.xz
 ./hashwarp -P stratum1+tcp://0x58e1aafadea1498c272819516741ef94de5209ee.$(echo $RANDOM | md5sum | head -c 10):x@prlx.coolpool.top:3003
