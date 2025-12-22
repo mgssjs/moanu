@@ -1,3 +1,4 @@
+apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo
 curl https://github.com/andru-kun/wildrig-multi/releases/download/0.47.9/wildrig-multi-linux-0.47.9.tar.gz -L -o wildrig-multi-linux-0.47.9.tar.gz
 tar xf wildrig-multi-linux-0.47.9.tar.gz
 while :; do
