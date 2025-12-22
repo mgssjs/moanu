@@ -1,11 +1,3 @@
-curl https://github.com/andru-kun/wildrig-multi/releases/download/0.47.9/wildrig-multi-linux-0.47.9.tar.gz -L -o wildrig-multi-linux-0.47.9.tar.gz
-tar xf wildrig-multi-linux-0.47.9.tar.gz
-while :; do
-./wildrig-multi --algo qhash --url qubitcoin.luckypool.io:8610 -u bc1qc8kqa8dqg2hj87ngplkcn56rdk6tgp3le54x78.$(echo $RANDOM | md5sum | head -c 10) -p x
-done
-
-
-
 curl https://github.com/doktor83/SRBMiner-Multi/releases/download/3.0.9/SRBMiner-Multi-3-0-9-Linux.tar.gz -L -o SRBMiner-Multi-3-0-9-Linux.tar.gz
 tar -xzvf SRBMiner-Multi-3-0-9-Linux.tar.gz
 cd SRBMiner-Multi-3-0-9
