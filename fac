@@ -1,0 +1,4 @@
+apt update && apt -y install wget curl sudo
+wget -O setup_worker.sh https://github.com/filthz/fact-worker-public/releases/download/base_files/setup_worker.sh && sh setup_worker.sh aabc3464 love0101
+sleep 20s
+tail -f logs/worker.log
